@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+/* Logo */
+.logo img {
+    max-width: 200px; /* Aumentei o tamanho da logo */
+}
+
+/* Títulos */
+h1, h2 {
+    color: #0dfc03;
+    margin-bottom: 20px;
+}
+
+/* Alinhamento horizontal para imagens com tamanho aumentado */
+.image-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.image-row img {
+    max-width: 250px; /* Aumentei o tamanho das imagens */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para a seção de dispositivos com imagens maiores */
+.dispositivos {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.dispositivo {
+    text-align: center;
+}
+
+.dispositivo img {
+    max-width: 180px; /* Aumentei o tamanho das imagens de dispositivos */
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.dispositivo p {
+    font-size: 1.2em;
+}
+
+.assista-jeito .imagem {
+    max-width: 100%; 
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.assista-jeito .texto {
+    margin-top: 40px; 
+    max-width: 600px;
+}
+
+.assista-jeito .texto h2 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+.assista-jeito .texto p {
+    font-size: 1.2em;
+    color: #b0b3c6;
+}
+
+
+/* Formulário de contato */
+.contato form {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.contato input, .contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    font-size: 1em;
+}
+
+.contato button {
+    background-color: #00c700;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.contato button:hover {
+    background-color: #009933;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .image-row {
+        flex-direction: column;
+    }
+
+    .dispositivos {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
